@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Joke Categories View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="JokeCategoriesViewController" id="BYZ-38-t0r" customClass="JokeCategoriesViewController" customModule="ChuckAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="6we-uj-l39">
+                                <rect key="frame" x="82" y="323" width="250" height="250"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4Ig-lC-iRV">
+                                        <rect key="frame" x="0.0" y="0.0" width="250" height="120"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aAk-EC-xO1" userLabel="animalButton">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Animal"/>
+                                                <connections>
+                                                    <action selector="categorieButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Bov-es-hsU"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u2D-np-pmK" userLabel="careerButton">
+                                                <rect key="frame" x="130" y="0.0" width="120" height="120"/>
+                                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                                <state key="normal" title="Career"/>
+                                                <connections>
+                                                    <action selector="categorieButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gH4-Qh-pGF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="bz8-J9-qo8">
+                                        <rect key="frame" x="0.0" y="130" width="250" height="120"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5U-Qb-999" userLabel="celebrityButton">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                                <color key="backgroundColor" systemColor="systemPinkColor"/>
+                                                <state key="normal" title="Celebrity"/>
+                                                <connections>
+                                                    <action selector="categorieButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Qzs-U8-OFm"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IG5-Ju-vH5" userLabel="devButton">
+                                                <rect key="frame" x="130" y="0.0" width="120" height="120"/>
+                                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                                <state key="normal" title="Dev"/>
+                                                <connections>
+                                                    <action selector="categorieButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RmE-nF-nY1"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="ar7-Rv-DG6"/>
+                                    <constraint firstAttribute="height" constant="250" id="lT7-C7-doT"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6we-uj-l39" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="9iI-xI-Taw"/>
+                            <constraint firstItem="6we-uj-l39" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bSQ-lz-wc2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animalButton" destination="aAk-EC-xO1" id="bSa-we-r44"/>
+                        <outlet property="careerButton" destination="u2D-np-pmK" id="M64-Tn-gSp"/>
+                        <outlet property="celebrityButton" destination="y5U-Qb-999" id="XYJ-bu-IYX"/>
+                        <outlet property="devButton" destination="IG5-Ju-vH5" id="6JR-Fc-OhG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="91" y="103"/>
+        </scene>
+        <!--Joke Description View Controller-->
+        <scene sceneID="MHf-b8-cEQ">
+            <objects>
+                <viewController storyboardIdentifier="JokeDescriptionViewController" id="hzl-oq-AFY" customClass="JokeDescriptionViewController" customModule="ChuckAPI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WYa-gT-hZG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s4d-Kx-Kb3">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KZd-w9-3hG"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="s4d-Kx-Kb3" firstAttribute="top" secondItem="KZd-w9-3hG" secondAttribute="top" id="4oP-NK-bms"/>
+                            <constraint firstItem="s4d-Kx-Kb3" firstAttribute="leading" secondItem="KZd-w9-3hG" secondAttribute="leading" id="DT0-gt-ltn"/>
+                            <constraint firstItem="KZd-w9-3hG" firstAttribute="trailing" secondItem="s4d-Kx-Kb3" secondAttribute="trailing" id="FPD-FQ-pD3"/>
+                            <constraint firstItem="KZd-w9-3hG" firstAttribute="bottom" secondItem="s4d-Kx-Kb3" secondAttribute="bottom" id="qv3-pJ-Pw2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="jokeLabel" destination="s4d-Kx-Kb3" id="Ha0-Jc-6em"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dCY-Cr-w9n" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="745" y="102"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemOrangeColor">
+            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
