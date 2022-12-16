@@ -1,7 +1,7 @@
 import Foundation
 @testable import ChuckAPI
 
-final class MockURLSessionDataTask: URLSessionDataTaskProtocol {
+class MockURLSessionDataTask: URLSessionDataTaskProtocol {
     private(set) var resumeCalled = false
     
     func resume() {

@@ -26,14 +26,7 @@ class JokeDescriptionWorker: JokeDescriptionWorkerProtocol {
             return
         }
         
-        func dskjds() {
-            let task = URLSession.shared.dataTask(with: URL(string: "ds")!) { (data, resposne, error) in
-                print("adasd")
-            }
-        }
-        
-        
-        session.dataTaskWithURL(with: url) { (data, response, error) in
+        session.dataTaskWithURL(url: url) { (data, response, error) in
             guard let response = response as? HTTPURLResponse else {
                 completion(nil, NetworkError.invalidResponse)
                 return

@@ -196,19 +196,19 @@
 		720D2FA42948DB2F002D9176 /* ChuckAPITests */ = {
 			isa = PBXGroup;
 			children = (
-				720D2FAF2948DB48002D9176 /* Scenes */,
+				720D2FAF2948DB48002D9176 /* Modules */,
 				720D2FA72948DB2F002D9176 /* Info.plist */,
 			);
 			path = ChuckAPITests;
 			sourceTree = "<group>";
 		};
-		720D2FAF2948DB48002D9176 /* Scenes */ = {
+		720D2FAF2948DB48002D9176 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				720D2FB02948DB4F002D9176 /* JokeCategories */,
 				720D2FB12948DB56002D9176 /* JokeDescription */,
 			);
-			path = Scenes;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		720D2FB02948DB4F002D9176 /* JokeCategories */ = {
@@ -282,7 +282,7 @@
 			children = (
 				72047D03294B973600C2CB73 /* Extensions */,
 				720D2F902948CF91002D9176 /* Models */,
-				72F1D1C3294782FC001648A8 /* Scenes */,
+				72F1D1C3294782FC001648A8 /* Modules */,
 				72F1D1AD29478179001648A8 /* AppDelegate.swift */,
 				72F1D1AF29478179001648A8 /* SceneDelegate.swift */,
 				72F1D1B329478179001648A8 /* Main.storyboard */,
@@ -293,13 +293,13 @@
 			path = ChuckAPI;
 			sourceTree = "<group>";
 		};
-		72F1D1C3294782FC001648A8 /* Scenes */ = {
+		72F1D1C3294782FC001648A8 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				72F1D1C42947C1B4001648A8 /* JokeCategories */,
 				72F1D1D62947F039001648A8 /* JokeDescription */,
 			);
-			path = Scenes;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 		72F1D1C42947C1B4001648A8 /* JokeCategories */ = {
