@@ -21,7 +21,6 @@ class JokeView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = .systemGray5
-        
         addSubview(jokeLabel)
         jokeLabel.fillConstraints(
             top: topAnchor,
@@ -39,7 +38,7 @@ class JokeView: UIView {
         fatalError()
     }
     
-    func textLabelSetup(jokeText: String) {
+    func setupTextLabel(jokeText: String) {
         jokeLabel.text = jokeText
         activityIndicatorView.stopAnimating()
     }

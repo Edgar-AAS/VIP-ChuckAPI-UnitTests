@@ -52,7 +52,7 @@ class JokeDescriptionViewController: UIViewController, JokeDescriptionDisplayLog
     
     //retorno do presenter
     func displayJoke(viewModel: JokeDescription.Fetch.ViewModel) {
-        jokeView?.textLabelSetup(jokeText: viewModel.joke)
+        jokeView?.setupTextLabel(jokeText: viewModel.joke)
     }
 }
     

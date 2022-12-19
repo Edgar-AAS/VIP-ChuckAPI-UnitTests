@@ -18,12 +18,7 @@ class JokeHomeView: UIView {
         backgroundColor = .white
     }
     
-    private weak var delegate: JokeHomeViewDelegate?
-    
-    convenience init(delegate: JokeHomeViewDelegate?) {
-        self.init(frame: .zero)
-        self.delegate = delegate
-    }
+    weak var delegate: JokeHomeViewDelegate?
     
     required init?(coder: NSCoder) {
         fatalError()
@@ -69,7 +64,7 @@ class JokeHomeView: UIView {
     @objc func categorieButtonTapped(sender: UIButton) {
         delegate?.homeButtonDidTapped(sender: sender)
     }
-    
+
     private lazy var animalCareerStackView: UIStackView = {
         let stackView = UIStackView(arrangedSubviews: [animalButton, careerButton])
         stackView.axis = .horizontal

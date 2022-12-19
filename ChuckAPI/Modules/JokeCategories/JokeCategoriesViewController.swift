@@ -9,7 +9,8 @@ class JokeCategoriesViewController: UIViewController, JokeCategoriesDisplayLogic
     
     override func loadView() {
         super.loadView()
-        homeViewScreen = JokeHomeView(delegate: self)
+        homeViewScreen = JokeHomeView()
+        homeViewScreen?.delegate = self
         view = homeViewScreen
     }
     
