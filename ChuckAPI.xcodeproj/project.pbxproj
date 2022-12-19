@@ -22,6 +22,11 @@
 		720D2FB52948DC1B002D9176 /* JokeCategoriesViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D2FB42948DC1B002D9176 /* JokeCategoriesViewControllerTests.swift */; };
 		720D2FB92948DC3F002D9176 /* JokeCategoriesInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D2FB82948DC3F002D9176 /* JokeCategoriesInteractorTests.swift */; };
 		720D2FBD2948DC56002D9176 /* JokeCategoriesPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 720D2FBC2948DC56002D9176 /* JokeCategoriesPresenterTests.swift */; };
+		725C7A2C2950A5CB00E6E968 /* JokeHomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725C7A2B2950A5CB00E6E968 /* JokeHomeView.swift */; };
+		725C7A302950A74600E6E968 /* CodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725C7A2F2950A74600E6E968 /* CodeView.swift */; };
+		725C7A342950A79600E6E968 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725C7A332950A79600E6E968 /* UIView.swift */; };
+		725C7A3B2950B78C00E6E968 /* JokeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725C7A3A2950B78C00E6E968 /* JokeView.swift */; };
+		7261C9ED294E2C8300B05D92 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7261C9EC294E2C8300B05D92 /* Model.swift */; };
 		72DC6E0D294CC03C00CF6386 /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DC6E0C294CC03C00CF6386 /* URLSession.swift */; };
 		72DC6E16294CCF9100CF6386 /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DC6E15294CCF9100CF6386 /* MockURLSession.swift */; };
 		72DC6E23294CD11300CF6386 /* JokeDescriptionWorkerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DC6E22294CD11300CF6386 /* JokeDescriptionWorkerTests.swift */; };
@@ -29,7 +34,6 @@
 		72DC6E2F294CDF9A00CF6386 /* MockURLSessionDataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DC6E2E294CDF9A00CF6386 /* MockURLSessionDataTask.swift */; };
 		72F1D1AE29478179001648A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F1D1AD29478179001648A8 /* AppDelegate.swift */; };
 		72F1D1B029478179001648A8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F1D1AF29478179001648A8 /* SceneDelegate.swift */; };
-		72F1D1B529478179001648A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F1D1B329478179001648A8 /* Main.storyboard */; };
 		72F1D1B729478183001648A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72F1D1B629478183001648A8 /* Assets.xcassets */; };
 		72F1D1BA29478183001648A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72F1D1B829478183001648A8 /* LaunchScreen.storyboard */; };
 		72F1D1CB2947C239001648A8 /* JokeCategoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F1D1C52947C239001648A8 /* JokeCategoriesPresenter.swift */; };
@@ -79,6 +83,11 @@
 		720D2FB42948DC1B002D9176 /* JokeCategoriesViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeCategoriesViewControllerTests.swift; sourceTree = "<group>"; };
 		720D2FB82948DC3F002D9176 /* JokeCategoriesInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeCategoriesInteractorTests.swift; sourceTree = "<group>"; };
 		720D2FBC2948DC56002D9176 /* JokeCategoriesPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeCategoriesPresenterTests.swift; sourceTree = "<group>"; };
+		725C7A2B2950A5CB00E6E968 /* JokeHomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeHomeView.swift; sourceTree = "<group>"; };
+		725C7A2F2950A74600E6E968 /* CodeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CodeView.swift; sourceTree = "<group>"; };
+		725C7A332950A79600E6E968 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		725C7A3A2950B78C00E6E968 /* JokeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeView.swift; sourceTree = "<group>"; };
+		7261C9EC294E2C8300B05D92 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		72DC6E0C294CC03C00CF6386 /* URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
 		72DC6E15294CCF9100CF6386 /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 		72DC6E22294CD11300CF6386 /* JokeDescriptionWorkerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeDescriptionWorkerTests.swift; sourceTree = "<group>"; };
@@ -87,7 +96,6 @@
 		72F1D1AA29478179001648A8 /* ChuckAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChuckAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72F1D1AD29478179001648A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72F1D1AF29478179001648A8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		72F1D1B429478179001648A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		72F1D1B629478183001648A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72F1D1B929478183001648A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72F1D1BB29478183001648A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -157,6 +165,8 @@
 				72047D04294B976100C2CB73 /* DispatchQueue.swift */,
 				72DC6E0C294CC03C00CF6386 /* URLSession.swift */,
 				72DC6E2A294CDF2300CF6386 /* URLSessionDataTask.swift */,
+				725C7A2F2950A74600E6E968 /* CodeView.swift */,
+				725C7A332950A79600E6E968 /* UIView.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -189,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				720D2F912948CF9A002D9176 /* Joke.swift */,
+				7261C9EC294E2C8300B05D92 /* Model.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -233,6 +244,22 @@
 				72047D0F294BADAE00C2CB73 /* Seeds */,
 			);
 			path = JokeDescription;
+			sourceTree = "<group>";
+		};
+		725C7A2A2950A5A700E6E968 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				725C7A2B2950A5CB00E6E968 /* JokeHomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		725C7A392950B77500E6E968 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				725C7A3A2950B78C00E6E968 /* JokeView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		72A8AEB2294AA4A100208B49 /* Doubles */ = {
@@ -285,7 +312,6 @@
 				72F1D1C3294782FC001648A8 /* Modules */,
 				72F1D1AD29478179001648A8 /* AppDelegate.swift */,
 				72F1D1AF29478179001648A8 /* SceneDelegate.swift */,
-				72F1D1B329478179001648A8 /* Main.storyboard */,
 				72F1D1B629478183001648A8 /* Assets.xcassets */,
 				72F1D1B829478183001648A8 /* LaunchScreen.storyboard */,
 				72F1D1BB29478183001648A8 /* Info.plist */,
@@ -305,6 +331,7 @@
 		72F1D1C42947C1B4001648A8 /* JokeCategories */ = {
 			isa = PBXGroup;
 			children = (
+				725C7A2A2950A5A700E6E968 /* View */,
 				72F1D1C52947C239001648A8 /* JokeCategoriesPresenter.swift */,
 				72F1D1C72947C239001648A8 /* JokeCategoriesRouter.swift */,
 				72F1D1C82947C239001648A8 /* JokeCategoriesModels.swift */,
@@ -317,6 +344,7 @@
 		72F1D1D62947F039001648A8 /* JokeDescription */ = {
 			isa = PBXGroup;
 			children = (
+				725C7A392950B77500E6E968 /* View */,
 				72F1D1D72947F06A001648A8 /* JokeDescriptionPresenter.swift */,
 				72F1D1D82947F06A001648A8 /* JokeDescriptionWorker.swift */,
 				72F1D1D92947F06A001648A8 /* JokeDescriptionRouter.swift */,
@@ -430,7 +458,6 @@
 			files = (
 				72F1D1BA29478183001648A8 /* LaunchScreen.storyboard in Resources */,
 				72F1D1B729478183001648A8 /* Assets.xcassets in Resources */,
-				72F1D1B529478179001648A8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -531,15 +558,20 @@
 				72F1D1D02947C239001648A8 /* JokeCategoriesInteractor.swift in Sources */,
 				72F1D1CD2947C239001648A8 /* JokeCategoriesRouter.swift in Sources */,
 				72DC6E0D294CC03C00CF6386 /* URLSession.swift in Sources */,
+				725C7A3B2950B78C00E6E968 /* JokeView.swift in Sources */,
+				725C7A302950A74600E6E968 /* CodeView.swift in Sources */,
 				72F1D1E12947F06A001648A8 /* JokeDescriptionViewController.swift in Sources */,
 				72F1D1CE2947C239001648A8 /* JokeCategoriesModels.swift in Sources */,
 				72F1D1AE29478179001648A8 /* AppDelegate.swift in Sources */,
 				72F1D1E22947F06A001648A8 /* JokeDescriptionInteractor.swift in Sources */,
 				720D2F922948CF9A002D9176 /* Joke.swift in Sources */,
 				72F1D1B029478179001648A8 /* SceneDelegate.swift in Sources */,
+				725C7A342950A79600E6E968 /* UIView.swift in Sources */,
+				7261C9ED294E2C8300B05D92 /* Model.swift in Sources */,
 				72DC6E2B294CDF2300CF6386 /* URLSessionDataTask.swift in Sources */,
 				72047D05294B976100C2CB73 /* DispatchQueue.swift in Sources */,
 				72F1D1CB2947C239001648A8 /* JokeCategoriesPresenter.swift in Sources */,
+				725C7A2C2950A5CB00E6E968 /* JokeHomeView.swift in Sources */,
 				72F1D1DF2947F06A001648A8 /* JokeDescriptionRouter.swift in Sources */,
 				72F1D1DE2947F06A001648A8 /* JokeDescriptionWorker.swift in Sources */,
 				72F1D1DD2947F06A001648A8 /* JokeDescriptionPresenter.swift in Sources */,
@@ -559,14 +591,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		72F1D1B329478179001648A8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				72F1D1B429478179001648A8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		72F1D1B829478183001648A8 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

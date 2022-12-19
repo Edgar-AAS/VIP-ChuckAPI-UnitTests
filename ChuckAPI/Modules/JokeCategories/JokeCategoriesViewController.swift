@@ -1,24 +1,30 @@
 import UIKit
 
-protocol JokeCategoriesDisplayLogic: class { }
+protocol JokeCategoriesDisplayLogic: class {}
 
 class JokeCategoriesViewController: UIViewController, JokeCategoriesDisplayLogic {
     var interactor: JokeCategoriesBusinessLogic?
     var router: (NSObjectProtocol & JokeCategoriesRoutingLogic & JokeCategoriesDataPassing)?
+    var homeViewScreen: JokeHomeView?
     
-    @IBOutlet var animalButton: UIButton!
-    @IBOutlet var careerButton: UIButton!
-    @IBOutlet var celebrityButton: UIButton!
-    @IBOutlet var devButton: UIButton!
+    override func loadView() {
+        super.loadView()
+        homeViewScreen = JokeHomeView(delegate: self)
+        view = homeViewScreen
+    }
     
-    // MARK: Object lifecycle
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         setup()
     }
     
-    required init?(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+    required init?(coder: NSCoder) {
+        fatalError()
+    }
+    
+    // MARK: View lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
         setup()
     }
     
@@ -28,6 +34,7 @@ class JokeCategoriesViewController: UIViewController, JokeCategoriesDisplayLogic
         let interactor = JokeCategoriesInteractor()
         let presenter = JokeCategoriesPresenter()
         let router = JokeCategoriesRouter()
+        
         viewController.interactor = interactor
         viewController.router = router
         interactor.presenter = presenter
@@ -35,35 +42,22 @@ class JokeCategoriesViewController: UIViewController, JokeCategoriesDisplayLogic
         router.viewController = viewController
         router.dataStore = interactor
     }
-    
-    // MARK: Routing
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let scene = segue.identifier {
-            let selector = NSSelectorFromString("routeTo\(scene)WithSegue:")
-            if let router = router, router.responds(to: selector) {
-                router.perform(selector, with: segue)
-            }
-        }
-    }
-    
-    // MARK: View lifecycle
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-    
-    @IBAction func categorieButtonTapped(_ sender: UIButton) {
+}
+
+extension JokeCategoriesViewController: JokeHomeViewDelegate {
+    func homeButtonDidTapped(sender: UIButton) {
         switch sender {
-        case animalButton:
-            interactor?.getSelectedCategory("animal")
-        case careerButton:
-            interactor?.getSelectedCategory("career")
-        case celebrityButton:
-            interactor?.getSelectedCategory("celebrity")
-        case devButton:
-            interactor?.getSelectedCategory("dev")
-        default:
-            break
+            case homeViewScreen?.animalButton:
+                interactor?.getSelectedCategory("animal")
+            case homeViewScreen?.careerButton:
+                interactor?.getSelectedCategory("career")
+            case homeViewScreen?.celebrityButton:
+                interactor?.getSelectedCategory("celebrity")
+            case homeViewScreen?.devButton:
+                interactor?.getSelectedCategory("dev")
+            default:
+                return
         }
-        router?.routeToJoke(segue: nil)
+        router?.routeToJoke()
     }
 }

@@ -39,5 +39,5 @@ class JokeDescriptionInteractor: JokeDescriptionBusinessLogic, JokeDescriptionDa
                 }
             }
         })
-    }
+    }       
 }

@@ -1,7 +1,7 @@
 import UIKit
 
-@objc protocol JokeCategoriesRoutingLogic {
-    func routeToJoke(segue: UIStoryboardSegue?)
+protocol JokeCategoriesRoutingLogic {
+    func routeToJoke()
 }
 
 protocol JokeCategoriesDataPassing {
@@ -13,18 +13,11 @@ class JokeCategoriesRouter: NSObject, JokeCategoriesRoutingLogic, JokeCategories
     var dataStore: JokeCategoriesDataStore?
     
     // MARK: Routing
-    func routeToJoke(segue: UIStoryboardSegue?) {
-        if let segue = segue {
-            let destinationVC = segue.destination as! JokeDescriptionViewController
-            var destinationDS = destinationVC.router!.dataStore!
-            passDataToJokeView(source: dataStore!, destination: &destinationDS)
-        } else {
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let destinationVC = storyboard.instantiateViewController(withIdentifier: "JokeDescriptionViewController") as! JokeDescriptionViewController
-            var destinationDS = destinationVC.router!.dataStore!
-            passDataToJokeView(source: dataStore!, destination: &destinationDS)
-            navigateToJoke(source: viewController!, destination: destinationVC)
-        }
+    func routeToJoke() {
+        let destinationVC = JokeDescriptionViewController()
+        var destinationDS = destinationVC.router!.dataStore!
+        passDataToJokeView(source: dataStore!, destination: &destinationDS)
+        navigateToJoke(source: viewController!, destination: destinationVC)
     }
     
     // MARK: Navigation

@@ -9,8 +9,6 @@ class JokeDescriptionViewControllerTests: XCTestCase {
         try super.setUpWithError()
         
         sut = JokeDescriptionViewController()
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        sut = storyboard.instantiateViewController(withIdentifier: "JokeDescriptionViewController") as? JokeDescriptionViewController
         interactorSpy = JokeDescriptionInteractorSpy()
         sut.interactor = interactorSpy
     }
@@ -33,6 +31,6 @@ class JokeDescriptionViewControllerTests: XCTestCase {
         _ = sut.view
         sut.displayJoke(viewModel: Seeds.ViewModels.viewModel1)
         //then
-        XCTAssertEqual(sut.jokeLabel.text, "Qual é a cidade brasileira que não tem táxi? - Uberlândia.")
+        XCTAssertEqual(sut.jokeView?.jokeLabel.text, "Qual é a cidade brasileira que não tem táxi? - Uberlândia.")
     }
 }
