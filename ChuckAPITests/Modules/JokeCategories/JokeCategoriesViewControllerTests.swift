@@ -6,7 +6,6 @@ class JokeCategoriesViewControllerTests: XCTestCase {
     
     override func setUpWithError() throws {
         try super.setUpWithError()
-        
         sut = JokeCategoriesViewController()
         interactorSpy = JokeCategoriesInteractorSpy()
         sut.loadViewIfNeeded()
@@ -20,134 +19,137 @@ class JokeCategoriesViewControllerTests: XCTestCase {
     }
     
     func test_animalButton_hasAction_assigned() throws {
-        //When
+        // When
         let animalButton: UIButton = sut.homeViewScreen!.animalButton
         guard let animalCategoryButtonAction = animalButton.actions(forTarget: sut.homeViewScreen, forControlEvent: .touchUpInside) else {
             XCTFail("animal button does not have action for event .touchUpInside")
             return
         }
-        //Then
-        XCTAssertTrue(animalCategoryButtonAction.contains("categorieButtonTappedWithSender:"), "animalButton should trigger categorieButtonTapped: action")
+        // Then
+        XCTAssertTrue(animalCategoryButtonAction.contains("categorieButtonTappedWithSender:"),
+                      "animalButton should trigger categorieButtonTapped: action")
     }
     
     func test_careerButton_hasAction_assigned() throws {
-        //When
+        // When
         let careerButton: UIButton = sut.homeViewScreen!.careerButton
         guard let careerCategoryButtonAction = careerButton.actions(forTarget: sut.homeViewScreen, forControlEvent: .touchUpInside) else {
             XCTFail("career button does not have action for event .touchUpInside")
             return
         }
-        //Then
-        XCTAssertTrue(careerCategoryButtonAction.contains("categorieButtonTappedWithSender:"), "careerButton should trigger categorieButtonTapped: action")
+        // Then
+        XCTAssertTrue(careerCategoryButtonAction.contains("categorieButtonTappedWithSender:"),
+                      "careerButton should trigger categorieButtonTapped: action")
     }
     
     func test_celebrityButton_hasAction_assigned() throws {
-        //When
+        // When
         let celebrityButton: UIButton = sut.homeViewScreen!.celebrityButton
         guard let celebrityCategoryButtonAction = celebrityButton.actions(forTarget: sut.homeViewScreen, forControlEvent: .touchUpInside) else {
             XCTFail("celebrity button does not have action for event .touchUpInside")
             return
         }
-        //Then
-        XCTAssertTrue(celebrityCategoryButtonAction.contains("categorieButtonTappedWithSender:"), "celebrityButton should trigger categorieButtonTapped: action")
+        // Then
+        XCTAssertTrue(celebrityCategoryButtonAction.contains("categorieButtonTappedWithSender:"),
+                      "celebrityButton should trigger categorieButtonTapped: action")
     }
     
     func test_devButton_hasAction_assigned() throws {
-        //When
+        // When
         let devButton: UIButton = sut.homeViewScreen!.devButton
         guard let devCategoryButtonAction = devButton.actions(forTarget: sut.homeViewScreen, forControlEvent: .touchUpInside) else {
             XCTFail("dev button does not have action for event .touchUpInside")
             return
         }
-        //Then
-        XCTAssertTrue(devCategoryButtonAction.contains("categorieButtonTappedWithSender:"), "devButton should trigger categorieButtonTapped: action")
+        // Then
+        XCTAssertTrue(devCategoryButtonAction.contains("categorieButtonTappedWithSender:"),
+                      "devButton should trigger categorieButtonTapped: action")
     }
     
     func test_animalButtonTapped_shouldCall_getSelectedCategory() {
-        //When
+        // When
         sut.homeViewScreen?.categorieButtonTapped(sender: sut.homeViewScreen!.animalButton)
-        //Then
+        // Then
         XCTAssertTrue(interactorSpy.getSelectedCategoryCalled)
         XCTAssertEqual(interactorSpy.category, "animal")
     }
     
     func test_careerButtonTapped_shouldCall_getSelectedCategory() {
-        //When
+        // When
         sut.homeButtonDidTapped(sender: sut.homeViewScreen!.careerButton)
-        //Then
+        // Then
         XCTAssertTrue(interactorSpy.getSelectedCategoryCalled)
         XCTAssertEqual(interactorSpy.category, "career")
     }
     
     func test_celebrityButtonButtonTapped_shouldCall_getSelectedCategory() {
-        //When
+        // When
         sut.homeButtonDidTapped(sender: sut.homeViewScreen!.celebrityButton)
-        //Then
+        // Then
         XCTAssertTrue(interactorSpy.getSelectedCategoryCalled)
         XCTAssertEqual(interactorSpy.category, "celebrity")
     }
     
     func test_devButtonTapped_shouldCall_getSelectedCategory() {
-        //When
+        // When
         sut.homeButtonDidTapped(sender: sut.homeViewScreen!.devButton)
-        //Then
+        // Then
         XCTAssertTrue(interactorSpy.getSelectedCategoryCalled)
         XCTAssertEqual(interactorSpy.category, "dev")
     }
     
     func test_categorieButtonTapped_shouldCall_delegateHomeButtonDidTapped() {
-        //Given
+        // Given
         let delegateSpy = JokeHomeViewDelegateSpy()
         let button = UIButton()
         sut.homeViewScreen?.delegate = delegateSpy
-        //When
+        // When
         sut.homeViewScreen?.categorieButtonTapped(sender: button)
-        //Then
+        // Then
         XCTAssertTrue(delegateSpy.homeButtonDidTappedCalled)
     }
     
     func test_homeDidTappedPassedAnimalButtonSender() {
-        //Given
+        // Given
         let delegateSpy = JokeHomeViewDelegateSpy()
         let animalButton = sut.homeViewScreen?.animalButton
         sut.homeViewScreen?.delegate = delegateSpy
-        //When
+        // When
         sut.homeViewScreen?.categorieButtonTapped(sender: animalButton!)
-        //Then
+        // Then
         XCTAssertEqual(animalButton, delegateSpy.senderData)
     }
     
     func test_homeDidTappedPassedCareerButtonSender() {
-        //Given
+        // Given
         let delegateSpy = JokeHomeViewDelegateSpy()
         let careerbutton = sut.homeViewScreen?.careerButton
         sut.homeViewScreen?.delegate = delegateSpy
-        //When
+        // When
         sut.homeViewScreen?.categorieButtonTapped(sender: careerbutton!)
-        //Then
+        // Then
         XCTAssertEqual(careerbutton, delegateSpy.senderData)
     }
     
     func test_homeDidTappedPassedCelebrityButtonSender() {
-        //Given
+        // Given
         let delegateSpy = JokeHomeViewDelegateSpy()
         let celebrityButton = sut.homeViewScreen?.celebrityButton
         sut.homeViewScreen?.delegate = delegateSpy
-        //When
+        // When
         sut.homeViewScreen?.categorieButtonTapped(sender: celebrityButton!)
-        //Then
+        // Then
         XCTAssertEqual(celebrityButton, delegateSpy.senderData)
     }
     
     func test_homeDidTappedPassedDevButtonSender() {
-        //Given
+        // Given
         let delegateSpy = JokeHomeViewDelegateSpy()
         let devButton = sut.homeViewScreen?.devButton
         sut.homeViewScreen?.delegate = delegateSpy
-        //When
+        // When
         sut.homeViewScreen?.categorieButtonTapped(sender: devButton!)
-        //Then
+        // Then
         XCTAssertEqual(devButton, delegateSpy.senderData)
     }
 }
-

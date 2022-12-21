@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4898B1B070067CA72184016E /* Pods_ChuckAPI_ChuckAPITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B766B9A3C699F97593CC063 /* Pods_ChuckAPI_ChuckAPITests.framework */; };
 		72047CE0294B642B00C2CB73 /* JokeDescriptionInteractorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72047CDF294B642B00C2CB73 /* JokeDescriptionInteractorTests.swift */; };
 		72047CE6294B648500C2CB73 /* JokePresenterSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72047CE5294B648500C2CB73 /* JokePresenterSpy.swift */; };
 		72047CF0294B672200C2CB73 /* JokeDescriptionWorkerSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72047CEF294B672200C2CB73 /* JokeDescriptionWorkerSpy.swift */; };
@@ -49,7 +50,6 @@
 		72F1D1E12947F06A001648A8 /* JokeDescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F1D1DB2947F06A001648A8 /* JokeDescriptionViewController.swift */; };
 		72F1D1E22947F06A001648A8 /* JokeDescriptionInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72F1D1DC2947F06A001648A8 /* JokeDescriptionInteractor.swift */; };
 		78B71317E5F77D8541AF1BFE /* Pods_ChuckAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 944303B3452278AA17726132 /* Pods_ChuckAPI.framework */; };
-		C1FC49A17B7129CA399C281E /* Pods_ChuckAPITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 572BE7B4AD115B568729E791 /* Pods_ChuckAPITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,7 +65,7 @@
 /* Begin PBXFileReference section */
 		369059F6F94D7D1224A87F72 /* Pods-ChuckAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChuckAPITests.debug.xcconfig"; path = "Target Support Files/Pods-ChuckAPITests/Pods-ChuckAPITests.debug.xcconfig"; sourceTree = "<group>"; };
 		3E7B7D6BFFFB908B66D308C1 /* Pods-ChuckAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChuckAPI.release.xcconfig"; path = "Target Support Files/Pods-ChuckAPI/Pods-ChuckAPI.release.xcconfig"; sourceTree = "<group>"; };
-		572BE7B4AD115B568729E791 /* Pods_ChuckAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChuckAPITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5B766B9A3C699F97593CC063 /* Pods_ChuckAPI_ChuckAPITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChuckAPI_ChuckAPITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6C1B535ADBF7AAD44FD5BB3C /* Pods-ChuckAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChuckAPI.debug.xcconfig"; path = "Target Support Files/Pods-ChuckAPI/Pods-ChuckAPI.debug.xcconfig"; sourceTree = "<group>"; };
 		72047CDF294B642B00C2CB73 /* JokeDescriptionInteractorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeDescriptionInteractorTests.swift; sourceTree = "<group>"; };
 		72047CE5294B648500C2CB73 /* JokePresenterSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokePresenterSpy.swift; sourceTree = "<group>"; };
@@ -113,7 +113,9 @@
 		72F1D1DB2947F06A001648A8 /* JokeDescriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeDescriptionViewController.swift; sourceTree = "<group>"; };
 		72F1D1DC2947F06A001648A8 /* JokeDescriptionInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JokeDescriptionInteractor.swift; sourceTree = "<group>"; };
 		944303B3452278AA17726132 /* Pods_ChuckAPI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChuckAPI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		984988A752D71F7026F6DE42 /* Pods-ChuckAPI-ChuckAPITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChuckAPI-ChuckAPITests.debug.xcconfig"; path = "Target Support Files/Pods-ChuckAPI-ChuckAPITests/Pods-ChuckAPI-ChuckAPITests.debug.xcconfig"; sourceTree = "<group>"; };
 		DA4F5EA7DD023EF30B12ED60 /* Pods-ChuckAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChuckAPITests.release.xcconfig"; path = "Target Support Files/Pods-ChuckAPITests/Pods-ChuckAPITests.release.xcconfig"; sourceTree = "<group>"; };
+		FE64A6C272CD1A364D2F4AAB /* Pods-ChuckAPI-ChuckAPITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChuckAPI-ChuckAPITests.release.xcconfig"; path = "Target Support Files/Pods-ChuckAPI-ChuckAPITests/Pods-ChuckAPI-ChuckAPITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,7 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C1FC49A17B7129CA399C281E /* Pods_ChuckAPITests.framework in Frameworks */,
+				4898B1B070067CA72184016E /* Pods_ChuckAPI_ChuckAPITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				944303B3452278AA17726132 /* Pods_ChuckAPI.framework */,
-				572BE7B4AD115B568729E791 /* Pods_ChuckAPITests.framework */,
+				5B766B9A3C699F97593CC063 /* Pods_ChuckAPI_ChuckAPITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -365,6 +367,8 @@
 				3E7B7D6BFFFB908B66D308C1 /* Pods-ChuckAPI.release.xcconfig */,
 				369059F6F94D7D1224A87F72 /* Pods-ChuckAPITests.debug.xcconfig */,
 				DA4F5EA7DD023EF30B12ED60 /* Pods-ChuckAPITests.release.xcconfig */,
+				984988A752D71F7026F6DE42 /* Pods-ChuckAPI-ChuckAPITests.debug.xcconfig */,
+				FE64A6C272CD1A364D2F4AAB /* Pods-ChuckAPI-ChuckAPITests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -399,6 +403,7 @@
 				36306ECE89C1777F663E735C /* [CP] Check Pods Manifest.lock */,
 				72F1D1A629478179001648A8 /* Sources */,
 				72F1D1A729478179001648A8 /* Frameworks */,
+				72B4B55A2953592A005EEFB4 /* SwiftLint */,
 				72F1D1A829478179001648A8 /* Resources */,
 			);
 			buildRules = (
@@ -473,15 +478,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ChuckAPITests/Pods-ChuckAPITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ChuckAPI-ChuckAPITests/Pods-ChuckAPI-ChuckAPITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ChuckAPITests/Pods-ChuckAPITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-ChuckAPI-ChuckAPITests/Pods-ChuckAPI-ChuckAPITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChuckAPITests/Pods-ChuckAPITests-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ChuckAPI-ChuckAPITests/Pods-ChuckAPI-ChuckAPITests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		36306ECE89C1777F663E735C /* [CP] Check Pods Manifest.lock */ = {
@@ -521,12 +526,30 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ChuckAPITests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-ChuckAPI-ChuckAPITests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
+		};
+		72B4B55A2953592A005EEFB4 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "${PODS_ROOT}/SwiftLint/swiftlint\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -608,7 +631,7 @@
 /* Begin XCBuildConfiguration section */
 		720D2FAB2948DB2F002D9176 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 369059F6F94D7D1224A87F72 /* Pods-ChuckAPITests.debug.xcconfig */;
+			baseConfigurationReference = 984988A752D71F7026F6DE42 /* Pods-ChuckAPI-ChuckAPITests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -629,7 +652,7 @@
 		};
 		720D2FAC2948DB2F002D9176 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DA4F5EA7DD023EF30B12ED60 /* Pods-ChuckAPITests.release.xcconfig */;
+			baseConfigurationReference = FE64A6C272CD1A364D2F4AAB /* Pods-ChuckAPI-ChuckAPITests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

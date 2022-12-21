@@ -1,6 +1,5 @@
 import UIKit
 
-
 protocol JokeHomeViewDelegate: AnyObject {
     func homeButtonDidTapped(sender: UIButton)
 }
@@ -59,7 +58,6 @@ class JokeHomeView: UIView {
         button.setTitle("Dev", for: .normal)
         return button
     }()
-    
     
     @objc func categorieButtonTapped(sender: UIButton) {
         delegate?.homeButtonDidTapped(sender: sender)

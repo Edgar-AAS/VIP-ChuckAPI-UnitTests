@@ -1,16 +1,20 @@
 PODS:
   - SnapshotTesting (1.9.0)
+  - SwiftLint (0.47.1)
 
 DEPENDENCIES:
   - SnapshotTesting
+  - SwiftLint (= 0.47.1)
 
 SPEC REPOS:
   trunk:
     - SnapshotTesting
+    - SwiftLint
 
 SPEC CHECKSUMS:
   SnapshotTesting: 6141c48b6aa76ead61431ca665c14ab9a066c53b
+  SwiftLint: f80f1be7fa96d30e0aa68e58d45d4ea1ccaac519
 
-PODFILE CHECKSUM: 003ec42501bef5409aa57d624c925ae964d214b5
+PODFILE CHECKSUM: 4e218c4081cf2365ca55e992a2d3807e18001366
 
 COCOAPODS: 1.8.4

@@ -1,8 +1,6 @@
 import UIKit
 
-@objc protocol JokeDescriptionRoutingLogic {
-  //func routeToSomewhere(segue: UIStoryboardSegue?)
-}
+@objc protocol JokeDescriptionRoutingLogic {}
 
 protocol JokeDescriptionDataPassing {
   var dataStore: JokeDescriptionDataStore? { get }

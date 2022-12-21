@@ -5,7 +5,7 @@
 //  Created by Edgar Arlindo on 31/07/22.
 //
 
-//template method
+// Templete Method
 import Foundation
 
 protocol CodeView {

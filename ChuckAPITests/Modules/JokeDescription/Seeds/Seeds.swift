@@ -1,10 +1,3 @@
-//
-//  Seeds.swift
-//  ChuckAPITests
-//
-//  Created by Leonardo Almeida on 15/12/22.
-//
-
 import Foundation
 @testable import ChuckAPI
 
@@ -15,10 +8,10 @@ struct Seeds {
     }
     
     struct Responses {
-        static let response1 = JokeDescription.Fetch.Response(joke: "O que é um pontinho amarelo na piscina? - O César Cyellow.")
+        static let response1 = JokeDescription.Response(joke: "O que é um pontinho amarelo na piscina? - O César Cyellow.")
     }
     
     struct ViewModels {
-        static let viewModel1 = JokeDescription.Fetch.ViewModel(joke: "Qual é a cidade brasileira que não tem táxi? - Uberlândia.")
+        static let viewModel1 = JokeDescription.ViewModel(joke: "Qual é a cidade brasileira que não tem táxi? - Uberlândia.")
     }
 }

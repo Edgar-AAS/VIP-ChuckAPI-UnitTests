@@ -48,16 +48,16 @@ class JokeCategoriesViewController: UIViewController, JokeCategoriesDisplayLogic
 extension JokeCategoriesViewController: JokeHomeViewDelegate {
     func homeButtonDidTapped(sender: UIButton) {
         switch sender {
-            case homeViewScreen?.animalButton:
-                interactor?.getSelectedCategory("animal")
-            case homeViewScreen?.careerButton:
-                interactor?.getSelectedCategory("career")
-            case homeViewScreen?.celebrityButton:
-                interactor?.getSelectedCategory("celebrity")
-            case homeViewScreen?.devButton:
-                interactor?.getSelectedCategory("dev")
-            default:
-                return
+        case homeViewScreen?.animalButton:
+            interactor?.getSelectedCategory("animal")
+        case homeViewScreen?.careerButton:
+            interactor?.getSelectedCategory("career")
+        case homeViewScreen?.celebrityButton:
+            interactor?.getSelectedCategory("celebrity")
+        case homeViewScreen?.devButton:
+            interactor?.getSelectedCategory("dev")
+        default:
+            return
         }
         router?.routeToJoke()
     }

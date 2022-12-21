@@ -1,7 +1,6 @@
 import UIKit
 
 enum JokeDescription {
-    enum Fetch {
         struct Request: Equatable {
             let jokeCategory: String
         }
@@ -11,5 +10,4 @@ enum JokeDescription {
         struct ViewModel: Equatable {
             let joke: String
         }
-    }
 }

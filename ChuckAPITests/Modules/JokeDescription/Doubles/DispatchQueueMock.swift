@@ -6,4 +6,3 @@ final class DispatchQueueMock: DispatchQueueType {
         work()
     }
 }
-

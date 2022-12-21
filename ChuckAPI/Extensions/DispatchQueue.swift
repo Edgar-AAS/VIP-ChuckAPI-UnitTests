@@ -9,4 +9,3 @@ extension DispatchQueue: DispatchQueueType {
         async(group: nil, qos: .unspecified, flags: [], execute: work)
     }
 }
-

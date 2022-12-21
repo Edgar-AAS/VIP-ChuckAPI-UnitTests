@@ -2,11 +2,11 @@ import UIKit
 
 class JokeView: UIView {
     private lazy var activityIndicatorView: UIActivityIndicatorView = {
-        let ai = UIActivityIndicatorView(style: .large)
-        ai.tintColor = .lightGray
-        ai.hidesWhenStopped = true
-        ai.startAnimating()
-        return ai
+        let activity = UIActivityIndicatorView(style: .large)
+        activity.tintColor = .lightGray
+        activity.hidesWhenStopped = true
+        activity.startAnimating()
+        return activity
     }()
     
     lazy var jokeLabel: UILabel = {

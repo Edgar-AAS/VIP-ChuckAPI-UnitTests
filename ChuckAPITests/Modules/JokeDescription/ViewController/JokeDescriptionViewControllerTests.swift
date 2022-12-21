@@ -20,17 +20,17 @@ class JokeDescriptionViewControllerTests: XCTestCase {
     }
     
     func testShouldFetchJokeWhenViewDidLoad() {
-        //When
+        // When
         _ = sut.view
         // Then
         XCTAssert(interactorSpy!.fetchJokeCalled, "Deve buscar a piada quando a exibição é carregada")
     }
     
     func testDisplayJokeShouldReturnCorrectlyFormattedLabel() {
-        //when
+        // when
         _ = sut.view
         sut.displayJoke(viewModel: Seeds.ViewModels.viewModel1)
-        //then
+        // then
         XCTAssertEqual(sut.jokeView?.jokeLabel.text, "Qual é a cidade brasileira que não tem táxi? - Uberlândia.")
     }
 }

@@ -19,8 +19,7 @@ class JokeDescriptionInteractor: JokeDescriptionBusinessLogic, JokeDescriptionDa
         worker: JokeDescriptionWorkerProtocol = JokeDescriptionWorker(),
         presenter: JokeDescriptionPresentationLogic,
         mainDispatchQueue: DispatchQueueType = DispatchQueue.main
-    )
-    {
+    ) {
         self.worker = worker
         self.presenter = presenter
         self.mainDispatchQueue = mainDispatchQueue
@@ -34,7 +33,7 @@ class JokeDescriptionInteractor: JokeDescriptionBusinessLogic, JokeDescriptionDa
                 print(error)
             } else {
                 self?.mainDispatchQueue.async {
-                    let response = JokeDescription.Fetch.Response(joke: joke)
+                    let response = JokeDescription.Response(joke: joke)
                     self?.presenter.presentJoke(response: response)
                 }
             }

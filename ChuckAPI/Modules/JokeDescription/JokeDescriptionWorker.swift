@@ -18,8 +18,7 @@ class JokeDescriptionWorker: JokeDescriptionWorkerProtocol {
         self.session = session
     }
     
-    
-    //Criar views para testar o erro respectivo
+    // Criar views para testar o erro respectivo
     func fetchRandomJoke(categorie: String, completion: @escaping (Joke?, Error?) -> Void) {
         let baseURl = "https://api.chucknorris.io/jokes/random?category="
         

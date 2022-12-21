@@ -9,8 +9,8 @@ class MockURLSession: URLSessionProtocol {
     var response: HTTPURLResponse?
     var dataTask: URLSessionDataTaskProtocol = MockURLSessionDataTask()
     
-    //na implementacao original da apple o completion handler e chamado como retorno de uma requisicao
-    //no entanto, alteramos esse completion para retornar os dados Mockados bem como o dataTask.
+    // na implementacao original da apple o completion handler e chamado como retorno de uma requisicao
+    // no entanto, alteramos esse completion para retornar os dados Mockados bem como o dataTask.
     
     func dataTaskWithURL(url: URL, completionHandler: @escaping DataTaskResult) -> URLSessionDataTaskProtocol {
         lastURL = url

@@ -6,7 +6,7 @@ class JokePresenterSpy: JokeDescriptionPresentationLogic {
     
     var joke: String?
     
-    func presentJoke(response: JokeDescription.Fetch.Response) {
+    func presentJoke(response: JokeDescription.Response) {
         presentJokeCalled = true
         self.joke = response.joke
     }

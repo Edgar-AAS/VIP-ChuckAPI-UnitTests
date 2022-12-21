@@ -1,7 +1,7 @@
 import UIKit
 
 protocol JokeDescriptionDisplayLogic: class {
-    func displayJoke(viewModel: JokeDescription.Fetch.ViewModel)
+    func displayJoke(viewModel: JokeDescription.ViewModel)
 }
 
 class JokeDescriptionViewController: UIViewController, JokeDescriptionDisplayLogic {
@@ -9,7 +9,7 @@ class JokeDescriptionViewController: UIViewController, JokeDescriptionDisplayLog
     var router: (NSObjectProtocol & JokeDescriptionRoutingLogic & JokeDescriptionDataPassing)?
     var jokeView: JokeView?
     
-//     MARK: Object lifecycle
+    // MARK: Object lifecycle
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
         super.init(nibName: nibNameOrNil, bundle: nibBundleOrNil)
         setup()
@@ -50,8 +50,8 @@ class JokeDescriptionViewController: UIViewController, JokeDescriptionDisplayLog
         interactor?.fetchJoke()
     }
     
-    //retorno do presenter
-    func displayJoke(viewModel: JokeDescription.Fetch.ViewModel) {
+    // Retorno do presenter
+    func displayJoke(viewModel: JokeDescription.ViewModel) {
         jokeView?.setupTextLabel(jokeText: viewModel.joke)
     }
 }

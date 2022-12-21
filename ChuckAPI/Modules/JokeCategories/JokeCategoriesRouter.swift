@@ -25,7 +25,7 @@ class JokeCategoriesRouter: NSObject, JokeCategoriesRoutingLogic, JokeCategories
         source.show(destination, sender: nil)
     }
     
-    //   MARK: Passing data
+    // MARK: Passing data
     func passDataToJokeView(source: JokeCategoriesDataStore, destination: inout JokeDescriptionDataStore) {
         destination.category = source.category
     }
